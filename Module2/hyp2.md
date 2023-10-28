@@ -1,4 +1,6 @@
 
+
+
 ##  Varying `weight decay`, and observing the effect on model performance
 
 
@@ -10,12 +12,12 @@ python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_st
 ```
 
 
-| Model                   | Epochs | Train Batch Size | Learning Rate | Gradient Accumulation Steps | Weight Decay | Train time (seconds) | Accuracy | F1-score           |
-|-------------------------|--------|------------------|---------------|-----------------------------|--------------|----------------------|----------|--------------------|
-| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.005        | 100.36822247505188   | 0.932    | 0.9282700421940928 |
-| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.01         | 101.55510210990906   | 0.926    | 0.9217758985200846 |
-| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.25         | 100.8534562587738    | 0.916    | 0.9113924050632912 |
-| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.5          | 101.38943672180176   | 0.916    | 0.9142857142857144 |     
+| Model                   | Epochs | Train Batch Size | Learning Rate | Gradient Accumulation Steps | Weight Decay | Train time (seconds) | Accuracy | F1-score |
+|-------------------------|--------|------------------|---------------|-----------------------------|--------------|----------------------|----------|----------|
+| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.005        | 100.36               | 0.932    | 0.92827  |
+| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.01         | 101.55               | 0.926    | 0.92178  |
+| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.25         | 100.85               | 0.916    | 0.91139  |
+| distilbert-base-uncased | 4      | 32               | 0.0002        | 1                           | 0.5          | 101.39               | 0.916    | 0.91429  |     
 
 
 -----
