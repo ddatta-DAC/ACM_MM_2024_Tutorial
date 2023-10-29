@@ -1,11 +1,12 @@
 ##   See the effect of different `models` , with a different set of not carefully chosen hyperparameters.
 
 ```
-python3 textclf.py --model_id roberta-base            --gradient_accumulation_steps 1  --weight_decay 0.10  --learning_rate 0.05    --train_batch_size 16  --num_epochs 2
-python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_steps 1  --weight_decay 0.01 --learning_rate 0.0002   --train_batch_size 32  --num_epochs 10
-python3 textclf.py --model_id bert-base-uncased       --gradient_accumulation_steps 1  --weight_decay 0.01 --learning_rate 0.0001   --train_batch_size 16  --num_epochs 2
-python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_steps 2  --weight_decay 0.05 --learning_rate 0.01     --train_batch_size 64  --num_epochs 5
-python3 textclf.py --model_id microsoft/deberta-base  --gradient_accumulation_steps 2  --weight_decay 0.01 --learning_rate 0.00005   --train_batch_size 8  --num_epochs 10
+python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_steps 1  --weight_decay 0.01 --learning_rate 0.0001   --train_batch_size 64  --num_epochs 2
+python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_steps 1  --weight_decay 0.01 --learning_rate 0.0001   --train_batch_size 64  --num_epochs 1
+python3 textclf.py --model_id roberta-base            --gradient_accumulation_steps 1  --weight_decay 0.10  --learning_rate 0.0500  --train_batch_size 16  --num_epochs 2
+python3 textclf.py --model_id bert-base-uncased       --gradient_accumulation_steps 1  --weight_decay 0.01 --learning_rate 0.0002   --train_batch_size 32  --num_epochs 10
+python3 textclf.py --model_id distilbert-base-uncased --gradient_accumulation_steps 3  --weight_decay 0.01 --learning_rate 0.0001   --train_batch_size 16  --num_epochs 5
+python3 textclf.py --model_id microsoft/deberta-base  --gradient_accumulation_steps 2  --weight_decay 0.01 --learning_rate 0.00005  --train_batch_size 8   --num_epochs 3
 ```
 
 -----
