@@ -132,7 +132,7 @@ def main(
         model=model,
         args=training_args,
         train_dataset=dataset_dict["train"],
-        eval_dataset=dataset_dict["test"],
+        eval_dataset=dataset_dict["validation"],
         tokenizer=tokenizer_obj,
     )
     t1 = time()
