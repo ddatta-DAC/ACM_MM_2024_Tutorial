@@ -11,16 +11,15 @@ python3 textclf.py --model_id microsoft/deberta-base  --gradient_accumulation_st
 -----
 
 
-| Model                   | Epochs | Train Batch Size | Learning Rate | Gradient Accumulation Steps | Weight Decay | Train time (seconds) | Accuracy | F1-score |
-|-------------------------|--------|------------------|---------------|-----------------------------|--------------|----------------------|----------|----------|
-| roberta-base            | 2      | 16               | 0.05          | 1                           | 0.1          | 266.00               | 0.518    | 0.0      | 
-| distilbert-base-uncased | 10     | 32               | 0.0002        | 1                           | 0.01         | 100.16               | 0.92     | 0.91935  | 
-| bert-base-uncased       | 2      | 16               | 0.0001        | 1                           | 0.01         | 251.22               | 0.932    | 0.93061  | 
-| distilbert-base-uncased | 5      | 64               | 0.01          | 2                           | 0.05         | 76.42                | 0.482    | 0.65047  | 
-| microsoft/deberta-base  | 10     | 8                | 5e-05         | 2                           | 0.01         | 558.60               | 0.966    | 0.96523  | 
 
-
-
+| Model                   | Epochs | Train Batch Size | Learning Rate | Gradient Accumulation Steps | Weight Decay | Train time (seconds) | Accuracy | F1-score           |
+|-------------------------|--------|------------------|---------------|-----------------------------|--------------|----------------------|----------|--------------------|
+| distilbert-base-uncased | 2      | 64               | 0.0001        | 1                           | 0.01         | 33.35843515396118    | 0.91     | 0.9087221095334684 |
+| distilbert-base-uncased | 1      | 64               | 0.0001        | 1                           | 0.01         | 18.711568355560303   | 0.888    | 0.8833333333333333 |
+| roberta-base            | 2      | 16               | 0.05          | 1                           | 0.10         | 108.0506227016449    | 0.518    | 0.0                |
+| distilbert-base-uncased | 10     | 32               | 0.0002        | 1                           | 0.01         | 197.610830783844     | 0.886    | 0.8805031446540882 |
+| bert-base-uncased       | 5      | 16               | 0.0001        | 3                           | 0.01         | 243.37126684188843   | 0.94     | 0.9397590361445785 |
+| microsoft/deberta-base  | 3      | 8                | 5e-05         | 2                           | 0.01         | 338.98285031318665   | 0.958    | 0.9570552147239264 |
 ----
 
 We vary 
